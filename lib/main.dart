@@ -38,6 +38,8 @@ class MyApp extends StatelessWidget {
           // primarySwatch: Colors.blue,
           primaryColor: Color(0xff16182C),
           textTheme: TextTheme(
+            headline3: GoogleFonts.lato(
+                fontSize: 12, fontWeight: FontWeight.w400, color: Colors.white),
             headline1: GoogleFonts.lato(
                 fontSize: 18, fontWeight: FontWeight.w700, color: Colors.white),
             headline2: GoogleFonts.lato(

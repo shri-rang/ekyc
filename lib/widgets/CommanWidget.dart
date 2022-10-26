@@ -1,12 +1,21 @@
 import 'package:ekyc/screens/Colors.dart';
 import 'package:flutter/material.dart';
 
-Widget smallText(String title, BuildContext context, bool color) {
+Widget smallText(String title, BuildContext context, Color color) {
   return Text(
     title,
-    style: color
-        ? Theme.of(context).textTheme.subtitle1!.copyWith(color: orange)
+    style: color != Colors.white
+        ? Theme.of(context).textTheme.subtitle1!.copyWith(color: color)
         : Theme.of(context).textTheme.subtitle1!,
+  );
+}
+
+Widget tinyText(String title, BuildContext context, Color color) {
+  return Text(
+    title,
+    style: color != Colors.white
+        ? Theme.of(context).textTheme.headline3!.copyWith(color: color)
+        : Theme.of(context).textTheme.headline3!,
   );
 }
 

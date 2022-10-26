@@ -16,7 +16,7 @@ class _DocumentScreenState extends State<DocumentScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff16182C),
+      backgroundColor: Color(0xff16182C),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: puprle,
@@ -75,7 +75,7 @@ class _DocumentScreenState extends State<DocumentScreen> {
             const SizedBox(
               height: 7,
             ),
-            Center(child: smallText("Explore the App", context, true))
+            Center(child: smallText("Explore the App", context, orange))
           ],
         ),
       ),
